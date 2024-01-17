@@ -2,15 +2,11 @@
     margin: 0;
   }
 
-body{
-    
-
-}
 
 .title{
     text-align: center;
     font-size: 3rem;
-    color: #F7B05B;
+    color: black;
 }
 
 .logo img{
@@ -73,7 +69,7 @@ nav{
   .overlay{
     height: 150px;
     width: 450px;
-    background-color: #CC5803;
+    background-color: #645853;
     position: relative;
     top: -90px;
     right: -900px;
@@ -99,20 +95,50 @@ nav{
   .testimony-container{
     width: 80%;
     margin: auto;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
   }
 
 
     .profile{
         display: flex;
         flex-direction: column;
-        gap: 50px   ;
+        gap:50px   ;
         align-items: center;
+        padding: 20px;
+        padding-top: 100px;
+        background-color: #14181ba8;
+        box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.466);
+        border-radius: 50px;
+        justify-content: center;
+    color: white;
+    }
+    
+  
+
+    .profile p{
+      width: 50%;
+      text-align: center;
     }
 
 .profile img{
     flex: 1;
     text-align: center;
-    width: 80%;
+    /* width: 200px;
+    height: 200px; */
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.sideimg img{
+  width: 150px;
+  height: 150px;
+}
+
+.midimg img{
+  width:200px;
+  height: 200px;
 }
 
 .profile p{
@@ -121,24 +147,67 @@ nav{
 }
 
 
-.testimony-container{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 150px;
-
-}
-
 .caption{
     display: flex;
     flex-direction:column ;
+    justify-content: center;
+    align-items: center;
     gap: 30px;
 }
   
-.caption h3{
+.Info{
+    
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    width: 100%;
+    gap: 150px;
 }
 
+.Info img{
+    border-radius: 100%;
+    object-fit: cover;
+}
+.infoPick1,.infoPick2{
+    height: 350px;
+    width: 350px;
+}
 
+.writings{
+    display: flex;
+    flex-direction: column;
+    gap :50px;
+    width: 30%;
+}
 
+.Info1{
+  padding-right: 100px;
+}
 
+.Info2{
+  padding-left: 100px;
+}
+
+.still-img{
+  position: relative;
+  height: 800px;
+  width:100mvw;
+  background-image: url(Designs/Images/backgroundpic.jpg);
+  object-fit: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+background-size: cover;
+overflow-x: hidden;
+}
+
+.still-img::before{
+  content: "";
+   position: absolute; 
+   inset: 0;
+   background:linear-gradient(180deg, rgba(21, 22, 24, 0.24) 0%, #151618 100%);
+   z-index: 999 ;
+}
 
 
