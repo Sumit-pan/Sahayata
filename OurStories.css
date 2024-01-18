@@ -38,11 +38,33 @@
   /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   
   #hero{
-    background-color: powderblue;
-    height: 50vh;
+    position: relative;
+    background-image: url(Designs/Images/bbq.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
     width: 100;
+    text-align: center;
+    background-size: cover;
+  }
+
+  #hero h1{
+    font-size: 60px;
+    padding-top: 100px;
+    color: white;
+    z-index: 100;
+  }
+
+  #hero::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: #333333aa;
+    z-index: 1;
+
   }
   
+ 
 
 
 
