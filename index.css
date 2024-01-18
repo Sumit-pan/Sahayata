@@ -112,6 +112,7 @@ nav{
     display: flex;
     justify-content: center;
     gap: 100px;
+    margin-bottom: 50px;
   }
 
 
@@ -175,8 +176,6 @@ nav{
 /* ///////////////////////////Starting of our info page///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .Info{
-    
-    margin-top: 100px;
     margin-bottom: 100px;
     display: flex;
     align-items: center ;
