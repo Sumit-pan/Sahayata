@@ -24,9 +24,7 @@
     </nav>   
 
 
-
-
-   <div class="container">
+    <div class="container">
       <div class="forms-container">
         <div class="signin-signup">
           <form action="#" class="sign-in-form">
@@ -39,8 +37,11 @@
               <i class="fas fa-lock"></i>
               <input type="password" placeholder="Password" />
             </div>
-           
-            <input type="submit" value="Login" class="btn solid" />
+            
+            
+            
+            <!-- login set up -->
+            <button class="formbtn" onclick="login()">Login</button>
             <div class="social-media">
             </div>
           </form>
@@ -86,11 +87,12 @@
             <input type="submit" class="btn" value="Sign up" />
             <div class="social-media">
              
+
             </div>
           </form>
         </div>
       </div>
-
+      
       <div class="panels-container">
         <div class="panel left-panel">
           <div class="content">
@@ -119,51 +121,60 @@
       </div>
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
 <script>
-    const sign_in_btn = document.querySelector("#sign-in-btn");
-const sign_up_btn = document.querySelector("#sign-up-btn");
-const container = document.querySelector(".container");
+  const sign_in_btn = document.querySelector("#sign-in-btn");
+  const sign_up_btn = document.querySelector("#sign-up-btn");
+  const container = document.querySelector(".container");
+  
+  sign_up_btn.addEventListener("click", () => {
+    container.classList.add("sign-up-mode");
+  });
+  
+  sign_in_btn.addEventListener("click", () => {
+    container.classList.remove("sign-up-mode");
+  });
+  
+  
+  $("#search-icon").click(function() {
+    $(".nav").toggleClass("search");
+    $(".nav").toggleClass("no-search");
+    $(".search-input").toggleClass("search-active");
+  });
+  
+  $('.menu-toggle').click(function(){
+    $(".nav").toggleClass("mobile-nav");
+    $(this).toggleClass("is-active");
+  });
+  // fetch user api
+   function login() {
+            const email = document.getElementById('email').value
+            const password = document.getElementById('password').value
 
-sign_up_btn.addEventListener("click", () => {
-  container.classList.add("sign-up-mode");
-});
+            // Example API endpoint (replace with your actual API endpoint)
+            const apiEndpoint = 'https://api.example.com/login'
 
-sign_in_btn.addEventListener("click", () => {
-  container.classList.remove("sign-up-mode");
-});
-
-
-$("#search-icon").click(function() {
-  $(".nav").toggleClass("search");
-  $(".nav").toggleClass("no-search");
-  $(".search-input").toggleClass("search-active");
-});
-
-$('.menu-toggle').click(function(){
-   $(".nav").toggleClass("mobile-nav");
-   $(this).toggleClass("is-active");
-});
+            // Make a POST request to the API
+            fetch(apiEndpoint, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ email, password })
+            })
+            .then(response => response.json())
+            .then(data => {
+                // Check the response from the server
+                if (data.success) {
+                    console.log('Sucess')
+                    // Redirect or perform other actions as needed
+                } else {
+                    console.log('Failed')
+                }
+            })
+            .catch(error => {
+                console.error('Error during login:', error)
+            });
+        }
 </script>
 </body>
 </html>
