@@ -1,0 +1,131 @@
+
+
+/* ///////////////////////////////////Starting of navigation bar//////////////////////////////////////////// */
+
+.logo img{
+    height: 100px;
+    width: 100px;
+  }
+
+
+nav{
+
+    padding-top:10px ;
+    padding-left: 20px;
+    padding-right:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navigation-links{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 50px;
+    font-size: larger;
+}
+
+.navigation-links a{
+    text-decoration: none;
+    color: black;
+    justify-content: space-evenly;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+
+
+
+
+
+
+/* /////////////////////////Starting of Contact us form/////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.contact-container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .form-group textarea {
+    resize: vertical;
+  }
+  
+  .form-group button {
+    background-color: #4caf50;
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
