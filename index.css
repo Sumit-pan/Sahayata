@@ -220,11 +220,10 @@ nav{
   height: 800px;
   width:100mvw;
   background-image: url(Designs/Images/backgroundpic.jpg);
-  object-fit: contain;
   background-position: center;
   background-repeat: no-repeat;
-background-size: cover;
-overflow-x: hidden;
+  background-size: cover;
+  overflow-x: hidden;
 }
 
 .still-img::before{
