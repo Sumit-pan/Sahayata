@@ -6,55 +6,107 @@ body{
 }
 
 
-
 * {
     margin: 0;
   }
 
 
-  .contact-container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    background-color:  rgba(100, 98, 98, 0.411);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form {
+/* ///////////////////////////////////Starting of navigation bar//////////////////////////////////////////// */
+.logo img{
+    height: 100px;
+    width: 100px;
+    
+  
+  }
+  nav{
+    background-color: rgba(170, 167, 167, 0.411);
+    padding-top:10px ;
+    padding-left: 20px;
+    padding-right:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
+  }
+  
+  nav a:hover{
+    padding-bottom: 2px;
+    text-shadow: 2px 4px #2f2f301d ;
+  } 
+  .navigation-links{
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 50px;
+      font-size: larger;
+  }
+  
+  .navigation-links a{
+      text-decoration: none;
+      color: black;
+      justify-content: space-evenly;
+  }
+  
+  
+  /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+  
+.top-text{
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    padding-left: 200px;
+    padding-top: 50px;
+
 }
 
-.form-group {
-    margin-bottom: 15px;
+.top-part h1{
+    font-weight:bolder;
+    padding-left: 200px;
+    padding-top: 100px;
+    margin-bottom: 30px ;
+}
+.top-part img{
+    padding-left: 200px;
+    padding-top: 50px;
 }
 
-.form-group label {
-    font-weight: bold;
-    margin-bottom: 5px;
-}
 
-.form-group input,
-.form-group textarea {
+footer {
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    box-sizing: border-box;
+    background-color:white;
+    color: black;
 }
 
-.form-group textarea {
-    resize: vertical;
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 30px;
+    align-items: center;
 }
 
-.form-group button {
-    background-color: #4caf50;
-    color: #ffffff;
-    border: none;
+.school-name {
+    font-weight: bold;
+}
+
+.attend-button {
+    background-color: #4CAF50;
+    color: #fff;
     padding: 10px 15px;
-    border-radius: 4px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 16px;
-}   
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
