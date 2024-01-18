@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background-color: rgba(170, 167, 167, 0.411);
+}
+
 * {
     margin: 0;
   }
@@ -11,14 +18,36 @@
   
   }
   nav{
-  
-      padding-top:10px ;
-      padding-left: 20px;
-      padding-right:20px ;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    background-color: rgba(170, 167, 167, 0.411);
+    padding-top:10px ;
+    padding-left: 20px;
+    padding-right:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
   }
+  
+  .req-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+  }
+
+
+
+  .req-cards button{
+    margin-top: 20px;
+    margin-left:32%;
+  }
+  
+  nav a:hover{
+    padding-bottom: 2px;
+    text-shadow: 2px 4px #2f2f301d ;
+  } 
   
   .navigation-links{
       display: flex;
@@ -96,10 +125,10 @@ margin-bottom: 50px;
 
 .foot-detail{
   display: flex;
-  gap: 150px;
+  gap: 100px;
 
 }
-
+/* ////////////////////////////////////////Starting of Events/////////////////////////////////////////////////////// */
 .card-container{
   place-content: center;
     margin: 100px 70px;
@@ -107,7 +136,7 @@ margin-bottom: 50px;
     row-gap: 50px;
     column-gap: 100px;
     grid-template-columns: 350px 350px 350px;
-    grid-auto-rows: 25rem;
+    grid-auto-rows: 30rem;
 }
 
 .cards img{
@@ -118,7 +147,35 @@ margin-bottom: 50px;
 }
 
 
+/* //////////////////////////////////Startin of the button css////////////////////////////////////////////////////////////////////////////////////////////// */
+.apply-container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
 
+
+.apply-button {
+  background-color: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease-in-out;
+  width: 150px;
+
+}
+
+.apply-button:hover {
+  background-color: #45a049;
+}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 
 

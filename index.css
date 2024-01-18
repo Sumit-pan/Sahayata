@@ -1,7 +1,15 @@
+  @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+  body{
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(170, 167, 167, 0.411);
+  }
+
 * {
     margin: 0;
   }
 
+ 
 
 .title{
     text-align: center;
@@ -19,14 +27,15 @@
 
 }
 nav{
-
+    background-color: rgba(170, 167, 167, 0.411);
     padding-top:10px ;
     padding-left: 20px;
     padding-right:20px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+    font-weight: 500;
+  }
 
 .navigation-links{
     display: flex;
@@ -41,6 +50,14 @@ nav{
     color: black;
     justify-content: space-evenly;
 }
+
+/* nav a{
+  transition: padding-bottom ease-in-out ;
+} */
+nav a:hover{
+  padding-bottom: 2px;
+  text-shadow: 2px 4px #2f2f301d ;
+} 
 
 
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -90,6 +107,7 @@ nav{
     display: flex;
     flex-direction: column;
     gap: 35px;
+    padding-bottom:110px ;
   }
 
   .overlay h1{
@@ -103,6 +121,7 @@ nav{
 
 /* //////////////////////Startin of the Testimonial phase////////////////////////////////////////////////////////////////////////////////////////////////////////// */
   .testimony-title{
+    margin-top: 50px;
     margin-bottom: 55px;
   }
 
@@ -175,13 +194,23 @@ nav{
 
 /* ///////////////////////////Starting of our info page///////////////////////////////////////////////////////////////////////////////////////////////////// */
 
+/* .OurInfo{
+    background-color: #8885847b;
+    padding-bottom: 1px;
+    margin-bottom: 50px;
+
+} */
+
 .Info{
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     display: flex;
     align-items: center ;
     justify-content: center;
     width: 100%;
     gap: 150px;
+    background-color: #8885847b;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .Info img{
@@ -191,6 +220,13 @@ nav{
 .infoPick1,.infoPick2{
     height: 350px;
     width: 350px;
+}
+
+
+
+.Info1,.Info2{
+  padding-top: 50px;
+  padding-bottom:50px ;
 }
 
 .writings{
@@ -238,7 +274,7 @@ nav{
 /* /////////////////////////Starting of Footer/////////////////////////////////////////////////////////////////////////////////////////////////////// */
 
 .footer {
-  background-color: #333;
+  background-color: #14181ba8;
   color: #fff;
   padding: 20px;
   display: flex;

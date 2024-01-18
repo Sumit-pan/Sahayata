@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap');
+
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
 * {
     margin: 0;
   }
@@ -12,14 +19,20 @@
   
   }
   nav{
-  
-      padding-top:10px ;
-      padding-left: 20px;
-      padding-right:20px ;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    background-color: rgba(170, 167, 167, 0.411);
+    padding-top:10px ;
+    padding-left: 20px;
+    padding-right:20px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 500;
   }
+  
+  nav a:hover{
+    padding-bottom: 2px;
+    text-shadow: 2px 4px #2f2f301d ;
+  } 
   
   .navigation-links{
       display: flex;
@@ -144,6 +157,9 @@
     justify-content: center;
   }
   
+
+  
+  
   .social-icon {
     height: 46px;
     width: 46px;
@@ -251,6 +267,20 @@
     padding: 0.7rem 0;
   }
   
+  .formbtn{
+    color: white;
+    margin-top: 10px;
+    background-color: #EE6654;
+    border:none;
+    width: 130px;
+    height: 41px;
+    font-weight: 600;
+    box-shadow: none;
+    font-size: 0.8rem;
+    border-radius: 50px;
+  }
+
+
   .btn.transparent {
     margin: 0;
     background: none;
