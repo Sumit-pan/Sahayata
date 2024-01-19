@@ -144,7 +144,7 @@ input, button, select, textarea {
 	max-width: 500px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 10vh;
+	margin-top: 4vh;
 	margin-bottom: 10vh;
 	background-color: #FFF;
 	border-radius: .5rem;
@@ -158,18 +158,7 @@ input, button, select, textarea {
 	padding: 1.5rem 1.5rem 1rem;
 }
 
-.logo-circle {
-	width: 3.5rem;
-	height: 3.5rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	border-radius: 50%;
-	background-color: var(--c-action-primary-accent);
-	svg {
-		max-width: 1.5rem;
-	}
-}
+
 
 .btn-close {
 	display: flex;
@@ -186,7 +175,7 @@ input, button, select, textarea {
 }
 
 .modal-body {
-	padding: 1rem 1.5rem;
+	padding: 0rem 1.5rem;
 }
 
 .modal-title {

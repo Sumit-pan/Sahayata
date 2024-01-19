@@ -19,7 +19,7 @@ body{
   
   }
   nav{
-    background-color: rgba(170, 167, 167, 0.411);
+    background-color: rgba(71, 70, 70, 0.411);
     padding-top:10px ;
     padding-left: 20px;
     padding-right:20px ;
@@ -106,7 +106,10 @@ footer {
 
 
 
+.top-part img{
+  height: 300px;
+  width: 400px;
 
-
+}
 
 
