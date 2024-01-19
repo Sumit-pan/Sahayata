@@ -175,14 +175,11 @@ body{
     transition: 0.3s;
   }
   
-  .social-icon:hover {
-    color: #f7543f;
-    border-color: #b83120;
-  }
+  
   
   .btn {
     width: 150px;
-    background-color: #ee6654;
+    background-color: #334155;
     border: none;
     outline: none;
     height: 49px;
@@ -197,7 +194,7 @@ body{
   }
   
   .btn:hover {
-    background-color: #f14b35;
+    background-color: #0f172a;
   }
   .panels-container {
     position: absolute;
@@ -217,7 +214,7 @@ body{
     top: -10%;
     right: 48%;
     transform: translateY(-50%);
-    background:#FF4955;
+    background:#334155;
     transition: 1.8s ease-in-out;
     border-radius: 50%;
     z-index: 6;
@@ -270,7 +267,7 @@ body{
   .formbtn{
     color: white;
     margin-top: 10px;
-    background-color: #EE6654;
+    background-color: #334155;
     border:none;
     width: 130px;
     height: 41px;
@@ -278,6 +275,10 @@ body{
     box-shadow: none;
     font-size: 0.8rem;
     border-radius: 50px;
+  }
+
+  .formbtn:hover{
+    background-color: #0f172a;
   }
 
 
